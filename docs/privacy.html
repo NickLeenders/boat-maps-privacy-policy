@@ -24,33 +24,83 @@
 </head>
 <body>
   <h1>Privacy Policy</h1>
-  <p class="updated">Last updated: April 22, 2026</p>
+  <p class="updated">Last updated: May 21, 2026</p>
 
   <h2>Overview</h2>
-  <p>Boat Maps is a waterway navigation app for Amsterdam. We take your privacy seriously and collect as little data as possible.</p>
+  <p>Boat Maps is a waterway navigation app for Amsterdam. We collect as little data as possible. You can browse the map and read chats without signing in. You only need to sign in if you want to post in chats.</p>
 
   <h2>Location Data</h2>
-  <p>Boat Maps uses your device's GPS to display your position on the map and provide turn-by-turn navigation. Your precise location is processed entirely on your device and is never transmitted to our servers or any third party.</p>
-  <p>When you view the map, the visible map area (a bounding box of the region on screen) is sent to our server to load nearby points of interest such as restaurants and docks. This does not identify you or your precise location.</p>
+  <p>Boat Maps uses your device's GPS to display your position on the map and provide turn-by-turn navigation. Your precise location is processed on your device and is never transmitted to our servers, except for the coarse coordinates you choose to attach when posting a chat message about a spot.</p>
+  <p>When you view the map, the visible map area (a bounding box of the region on screen) is sent to our server to load nearby points of interest such as restaurants and docks. This does not identify you.</p>
+
+  <h2>Account Data (Optional)</h2>
+  <p>If you sign in to post chat messages, we use Sign in with Google or Sign in with Apple. We receive and store:</p>
+  <ul>
+    <li>An anonymised user ID from the provider</li>
+    <li>Your email address — used only to identify your account; <strong>never shown to other users</strong></li>
+    <li>A display name and an optional boat name that you choose yourself — both are <strong>public</strong> and shown next to your chat messages</li>
+  </ul>
+  <p>Authentication is handled by Supabase Auth. We do not store your provider password.</p>
+
+  <h2>Chat Data</h2>
+  <p>When you post a message in a chat about a place:</p>
+  <ul>
+    <li>The message body, your display name, your boat name (if set), the timestamp, and the location of the spot are stored on our server and are <strong>publicly visible, including to people who do not have an account</strong>. Reading the chat does not require signing in; posting does.</li>
+    <li>If you delete your own message, the body is wiped immediately. The row stays so replies underneath it remain readable, marked as "[deleted]".</li>
+    <li>If you send a private message to the admin via "Message admin", only the admin can read it. You may include a name and email for a reply — these are optional.</li>
+  </ul>
+
+  <h2>Moderation Data</h2>
+  <p>To keep the chat safe, the app supports reporting and blocking:</p>
+  <ul>
+    <li><strong>Reports:</strong> when you report a message, we store the message ID, your user ID, and the time. Only the admin can read reports.</li>
+    <li><strong>Blocks:</strong> when you block another user, we store that pair so the app can hide their messages from you. Only you can see your own blocklist. The user you blocked is not notified.</li>
+  </ul>
+  <p>We operate <strong>zero tolerance for objectionable content and abusive users</strong>. Reported content and reported users are reviewed, and offending messages or accounts are typically removed within 24 hours.</p>
+
+  <h2>Legal Basis (GDPR)</h2>
+  <p>We rely on:</p>
+  <ul>
+    <li><em>Consent</em> — when you sign in and accept the community rules.</li>
+    <li><em>Performance of a contract</em> — to provide the chat and navigation features you ask for.</li>
+    <li><em>Legitimate interests</em> — to keep the service secure and moderate abusive content.</li>
+  </ul>
+
+  <h2>Data Retention</h2>
+  <ul>
+    <li>Chat messages are kept until you delete them or your account is deleted.</li>
+    <li>Reports are kept up to 12 months after they have been handled, then removed.</li>
+    <li>Blocks are kept until you remove them or your account is deleted.</li>
+    <li>If you delete your account, your messages and personal data are deleted; replies left by other users underneath your messages stay visible with your authorship anonymised.</li>
+  </ul>
+
+  <h2>Your Rights (GDPR)</h2>
+  <p>If you are in the EEA or UK, you have the right to access, correct, export, or delete your personal data, and to object to or restrict its processing. To exercise any of these rights, email <a href="mailto:nicklndrs@gmail.com">nicklndrs@gmail.com</a>. We will respond within 30 days.</p>
+  <p>You may also lodge a complaint with the Dutch Data Protection Authority (Autoriteit Persoonsgegevens).</p>
 
   <h2>Data We Do Not Collect</h2>
   <ul>
-    <li>We do not collect your name, email address, or any account information</li>
-    <li>We do not track your movement history or routes</li>
-    <li>We do not share any data with advertisers or analytics services</li>
-    <li>We do not use third-party tracking or analytics SDKs</li>
+    <li>We do not track your movement history or routes.</li>
+    <li>We do not share data with advertisers or analytics services.</li>
+    <li>We do not use third-party tracking or analytics SDKs.</li>
+    <li>We do not sell personal data.</li>
   </ul>
 
   <h2>Third-Party Services</h2>
-  <p>Boat Maps uses <a href="https://supabase.com" target="_blank">Supabase</a> to serve map features (points of interest). Supabase receives map viewport coordinates to respond to queries. See <a href="https://supabase.com/privacy" target="_blank">Supabase's privacy policy</a> for details.</p>
+  <p>Boat Maps uses:</p>
+  <ul>
+    <li><a href="https://supabase.com" target="_blank">Supabase</a> — hosts map features, chat messages, accounts, reports and blocks. See <a href="https://supabase.com/privacy" target="_blank">Supabase's privacy policy</a>.</li>
+    <li><a href="https://policies.google.com/privacy" target="_blank">Google</a> — used if you choose Sign in with Google.</li>
+    <li><a href="https://www.apple.com/legal/privacy/" target="_blank">Apple</a> — used if you choose Sign in with Apple.</li>
+  </ul>
 
   <h2>Children's Privacy</h2>
-  <p>Boat Maps does not knowingly collect data from children under 13.</p>
+  <p>Boat Maps is not directed at children under 13 and we do not knowingly collect data from them.</p>
 
   <h2>Changes to This Policy</h2>
   <p>We may update this policy occasionally. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
 
   <h2>Contact</h2>
-  <p>Questions? Email us at <a href="mailto:nicklndrs@gmail.com">nicklndrs@gmail.com</a></p>
+  <p>Questions, deletion requests, or moderation issues? Email <a href="mailto:nicklndrs@gmail.com">nicklndrs@gmail.com</a>.</p>
 </body>
 </html>
